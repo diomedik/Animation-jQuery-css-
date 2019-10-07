@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'GloberBold';
+  src: url("../fonts/Glober Bold.otf");
+}
+@font-face {
+  font-family: 'GloberRegular';
+  src: url("../fonts/Glober Regular.otf");
+}
+.header img {
+  width: 100%;
+  position: relative;
+}
+.header-slider {
+  margin-top: 30px;
+}
+.header-slider__item {
+  position: relative;
+}
+.header-slider__item__content {
+  border: 1px solid #d1d1d1;
+  position: relative;
+}
+.header-slider__item__content__text {
+  cursor: pointer;
+  position: absolute;
+  padding: 15px 0px 20px 0px;
+  background: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.header-slider__item__content__text p {
+  margin: 0;
+  height: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'GloberBold';
+  font-size: 24px;
+  color: #323232;
+}
+.header-slider__item__content__text .disable-text {
+  display: none;
+  padding-top: 20px;
+  height: auto;
+  background: #dce8e7;
+  font-family: 'GloberRegular';
+  font-size: 16px;
+  color: #2e2e2e;
+}
+.header-slider__item__content__text:hover {
+  background: #dce8e7;
+}
+.header-arrows {
+  margin-top: 15px;
+  text-align: center;
+}
+.header-arrows__arrow-prev {
+  padding-right: 15px;
+}
+.header-arrows__arrow-prev::before {
+  content: url("../images/arrow-prev.png");
+}
+.header-arrows__arrow-next::before {
+  content: url("../images/arrow-next.png");
+}
+
+@media (max-width: 1199px) {
+  .header-slider__item__content__text .disable-text {
+    font-size: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header-slider__item__content__text .disable-text {
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 430px) {
+  .header-slider__item__content__text .disable-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .header-slider__item__content__text .disable-text {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
